@@ -1,0 +1,22 @@
+﻿<ons-template id="signin.html">
+    <ons-page>
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="menu.toggle()">
+                    <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center">サインイン</div>
+        </ons-toolbar>
+
+        <ons-row style="margin-top: 100px; text-align: center;">
+            <ons-col>
+                <input type="text" maxlength="8" placeholder="ID(学籍番号)を入力" /><br />
+                <input type="password" maxlength="12" placeholder="パスワードを入力" /><br />
+                <ons-button onclick="" style="text-align: right;">ログイン</ons-button><br />
+                アカウントを作っていない方はこちら<br />
+                <ons-button onclick="signup.html" style="text-align: right;">Create Account</ons-button><br />
+            </ons-col>
+        </ons-row>
+    </ons-page>
+</ons-template>

@@ -1,16 +1,14 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <form action="index.html" method="post">
-        NAME<input type="text" maxlength="12" placeholder="姓" /><input type="text" maxlength="12" placeholder="名" /><br />
-        Password<input type="password" maxlength="12" placeholder="半角英数12文字以内" /><br />
-        Password<input type="password" maxlength="12" placeholder="もう一度入力" /><br />
-        <ons-button onclick="" style="text-align: right;">登録する<ons-icon icon="pencil"></ons-icon></ons-button>
-    </form>
-</body>
-</html>
+﻿<ons-template id="signup.html">
+    <ons-page>
+        <ons-row style="margin-top: 100px; text-align: center;">
+            <ons-col>
+                <form action="index.html" method="post">
+                    NAME<input type="text" maxlength="12" placeholder="姓" /><input type="text" maxlength="12" placeholder="名" /><br />
+                    Password<input type="password" maxlength="12" placeholder="半角英数12文字以内" /><br />
+                    Password<input type="password" maxlength="12" placeholder="もう一度入力" /><br />
+                    <ons-button onclick="" style="text-align: right;">登録する<ons-icon icon="pencil"></ons-icon></ons-button>
+                </form>
+            </ons-col>
+        </ons-row>
+    </ons-page>
+</ons-template>
