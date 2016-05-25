@@ -113,7 +113,7 @@
                     USER
                 </ons-list-item>
 
-                <ons-list-item class="menu-item" ng-click="menu.setMainPage('page5.html', {closeMenu: true})">
+                <ons-list-item class="menu-item" ng-click="menu.setMainPage('contribution.html', {closeMenu: true})">
                     <ons-icon icon="plus"></ons-icon>
                     投稿
                 </ons-list-item>
@@ -136,20 +136,20 @@
             <br>
 
             <ons-list class="bottom-menu-list">
-                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
+                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('important_contact.html', {closeMenu: true})">
                     連絡通知
                     <div class="notification menu-notification">3</div>
                 </ons-list-item>
 
-                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('page2.html', {closeMenu: true})">
+                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('timeline.html', {closeMenu: true})">
                     タイムライン
                 </ons-list-item>
 
-                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
+                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('calendar.html', {closeMenu: true})">
                     イベントカレンダー
                 </ons-list-item>
 
-                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('page4.html', {closeMenu: true})">
+                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('schedule.html', {closeMenu: true})">
                     スケジュール調整
                 </ons-list-item>
 
@@ -166,7 +166,8 @@
         </ons-page>
     </ons-template>
 
-    <ons-template id="page1.html">
+    <!--
+    <ons-template id="important_contact.html">
         <ons-page>
             <ons-toolbar>
                 <div class="left">
@@ -219,106 +220,8 @@
             </ons-row>
         </ons-page>
     </ons-template>
-
-    <ons-template id="page2.html">
-        <ons-page>
-            <ons-toolbar>
-                <div class="left">
-                    <ons-toolbar-button ng-click="menu.toggle()">
-                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
-                    </ons-toolbar-button>
-                </div>
-                <div class="center">タイムライン</div>
-            </ons-toolbar>
-
-
-            <ons-row style="margin-top: 100px; text-align: center;">
-                <ons-col>
-                    作業進捗のタイムライン<br />
-                    <ons-button modifier="light" ng-click="menu.toggleMenu()">
-                        Toggle Menu
-                    </ons-button>
-                </ons-col>
-            </ons-row>
-
-        </ons-page>
-    </ons-template>
-
-    <ons-template id="page3.html">
-        <ons-page>
-            <ons-toolbar>
-                <div class="left">
-                    <ons-toolbar-button ng-click="menu.toggle()">
-                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
-                    </ons-toolbar-button>
-                </div>
-                <div class="center">イベントカレンダー</div>
-            </ons-toolbar>
-
-
-            <ons-row style="margin-top: 100px; text-align: center;">
-                <ons-col>
-                    部の予定をカレンダー形式で表示<br />
-                    <ons-button modifier="light" ng-click="menu.toggleMenu()">
-                        Toggle Menu
-                    </ons-button>
-                </ons-col>
-            </ons-row>
-
-        </ons-page>
-    </ons-template>
-
-    <ons-template id="page4.html">
-        <ons-page>
-            <ons-toolbar>
-                <div class="left">
-                    <ons-toolbar-button ng-click="menu.toggle()">
-                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
-                    </ons-toolbar-button>
-                </div>
-                <div class="center">スケジュール調整</div>
-            </ons-toolbar>
-
-
-            <ons-row style="margin-top: 100px; text-align: center;">
-                <ons-col>
-                    スケジュール調整を実装、詳細は未定<br />
-                    <ons-button modifier="light" ng-click="menu.toggleMenu()">
-                        Toggle Menu
-                    </ons-button>
-                </ons-col>
-            </ons-row>
-
-        </ons-page>
-    </ons-template>
-
-    <ons-template id="page5.html">
-        <ons-page>
-            <ons-toolbar>
-                <div class="left">
-                    <ons-toolbar-button ng-click="menu.toggle()">
-                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
-                    </ons-toolbar-button>
-                </div>
-                <div class="center">投稿</div>
-            </ons-toolbar>
-
-            <ons-row style="margin-top: 100px; text-align: center;">
-                <ons-col>
-                    <ons-list>
-                        <ons-list-item>
-                            <textarea class="text-input text-input--transparent" name="title" cols="20" rows="1" maxlength="20" wrap="soft" placeholder="title 20字以内" style="margin:8px; width: 100%; height: 30px; resize: none;"></textarea>
-                        </ons-list-item>
-                        <ons-list-item>
-                            <textarea class="text-input text-input--transparent" name="write" cols="20" rows="15" maxlength="300" wrap="soft" placeholder="contents 300字以内" style="margin:8px; width: 100%; height: 100px; resize: none;"></textarea>
-                        </ons-list-item>
-                    </ons-list>
-                    <ons-button onclick="" style="text-align: right;">投稿する<ons-icon icon="pencil"></ons-icon></ons-button>
-                </ons-col>
-            </ons-row>
-
-        </ons-page>
-    </ons-template>
+    -->
+    
     <script src="scripts/base.js"></script>
 </body>
 </html>
