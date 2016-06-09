@@ -1,4 +1,9 @@
 ﻿<ons-template id="signin.html">
+    <script src="scripts/login.js"></script>
+    <script src="scripts/cssua.min.js"></script>
+    <script src="components/loader.js"></script>
+    <script src="scripts/ncmb-latest.min.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
     <ons-page>
         <ons-toolbar>
             <div class="left">
@@ -11,11 +16,16 @@
 
         <ons-row style="margin-top: 100px; text-align: center;">
             <ons-col>
-                <input type="text" maxlength="8" placeholder="ID(学籍番号)を入力" /><br />
-                <input type="password" maxlength="12" placeholder="パスワードを入力" /><br />
-                <ons-button onclick="" style="text-align: right;">ログイン</ons-button><br />
-                アカウントを作っていない方はこちら<br />
-                <ons-button onclick="signup.html" style="text-align: right;">Create Account</ons-button><br />
+                <form method="post" action="signin.html">
+                    名前はひらがなフルネーム<br />
+                    <input type="text" name="user_name" pattern="[\u3041-\u3096]*" placeholder="ふるねーむにゅうりょく" required /><br />
+                    パスワードは半角英数6文字以上<br />
+                    <input type="password" pattern="^([a-zA-Z0-9]{6,})$" placeholder="password" required /><br />
+                    <input type="submit" value="ログイン" />
+                </form>
+                <script>
+
+                </script>
             </ons-col>
         </ons-row>
     </ons-page>
